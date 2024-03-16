@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  dynamicrafter:
+    container_name: dynamicrafter
+    image: maximofn/dynamicrafter
+    build: .
+    runtime: nvidia
+    network_mode: "host"
+    tty: true
+    stdin_open: true
